@@ -32,6 +32,7 @@
     "tabbable"
   ],
   "scripts": {
+    "postinstall": "npm run init",
     "init": "npm install && npm-run-all --sequential clean build build:website",
     "test": "intern-runner config=test/chrome",
     "test:server": "intern-runner config=test/browser",
